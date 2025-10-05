@@ -60,6 +60,7 @@ box-sizing: content-box;
     line-height: 117%;
     letter-spacing: 0.03em;
     padding: 24px 0;
+    margin-right: 76px;
 }
 .logo-link:hover,.logo-link:focus{
 color: #404bbf;
@@ -96,10 +97,11 @@ color: #404bbf;
 .header>.container{
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
 }
 .nav{
     display: flex;
-    gap: 76px;
     align-items: center;
 }
 .nav-list{
@@ -123,7 +125,7 @@ color: #404bbf;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    width: 496px;
+    max-width: 496px;
     margin: 0 auto 48px auto;
 }
 .section-hero
@@ -131,6 +133,7 @@ color: #404bbf;
     color: #FFF;
     background-color: #2E2F42;
     text-align: center;
+     padding: 188px 0 188px;
 }
 .hero-button{
     font-weight: 500;
@@ -140,11 +143,12 @@ color: #404bbf;
     color: #FFFFFF;
     background-color: #4D5AE5;
     cursor: pointer;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     border-radius: 4px;
     padding: 16px 32px;
-    
+    display: block;
+    border: none;
 }
 .hero-button:hover,.hero-button:focus{
     background-color: #404BBF;
@@ -158,6 +162,9 @@ color: #404bbf;
     letter-spacing: 0.02em;
     color: #434455;
 }
+.advantages-item{
+    width: calc((100% - 72px) / 4)
+}
 /* #endregion */
 /* #region --our team-- */
 .section-ourteam{
@@ -167,6 +174,16 @@ color: #404bbf;
 .team-item{
     background-color: #FFFFFF;
     text-align: center;
+    width: calc((100% - 72px) / 4);
+}
+.ourteam-teamtextbox{
+    padding: 32px 0;
+}
+.ourteam-teamtextbox .list-title{
+    text-align: center;
+}
+.ourteam-teamtextbox .list-text{
+    text-align: center;
 }
 /* #endregion */
 /* #region --our portfolio-- */
@@ -175,12 +192,14 @@ color: #404bbf;
     flex-wrap: wrap;
     gap: 48px 24px;
 }
+.portfolio-item{
+    width: calc((100% - 48px) / 3);
+}
 .portfolio-item-textblock{
     border-right: 1px solid #E7E9FC;
     border-bottom: 1px solid #E7E9FC;
     border-left: 1px solid #E7E9FC;
-    padding-bottom: 32px;
-    padding-left: 16px;
+    padding: 32px 16px;
 }
 .portfolio-item .list-title{
     padding-top: 32px;
@@ -232,6 +251,7 @@ color: #404bbf;
 .footer{
     background-color: #2E2F42;
     color: #F4F4FD;
+    padding: 100px 0;
 }
 .footer-text{
     letter-spacing: 0.02em;
@@ -239,14 +259,13 @@ color: #404bbf;
 .logo-half-foot{
     color: #F4F4FD;
 }
-.footer .container{
-    padding-top: 100px;
-    padding-bottom: 100px;
-
-}
 .footer .footer-text{
     padding-top: 16px;
     width: 264px;
+}
+.footer .logo-link{
+    display: inline-block;
+    margin-bottom: 16px;
 }
 /* #endregion */
 
